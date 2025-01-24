@@ -1,0 +1,96 @@
+
+.taskCard {
+    width: 100%;
+    max-width: 300px;
+    margin: 15px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+
+.taskCard.dragging {
+    opacity: 0.5;
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.taskCard h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.taskCard p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.deleteBtn {
+    padding: 7px 12px;
+    background-color: #e74c3c;
+    color: #fff;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.deleteBtn:hover {
+    background-color: transparent;
+    border: 1px solid #e74c3c;
+    color: #e74c3c;
+}
+
+
+@media (max-width: 1024px) {
+    .taskCard {
+        max-width: 280px;
+        padding: 18px;
+    }
+
+    .taskCard h3 {
+        font-size: 1.1rem;
+    }
+
+    .taskCard p {
+        font-size: 0.95rem;
+    }
+
+    .deleteBtn {
+        font-size: 0.85rem;
+        padding: 7px 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .taskCard {
+        max-width: 90%;
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .taskCard h3 {
+        font-size: 1rem;
+    }
+
+    .taskCard p {
+        font-size: 0.9rem;
+    }
+
+    .deleteBtn {
+        font-size: 0.8rem;
+        padding: 6px 8px;
+    }
+}
